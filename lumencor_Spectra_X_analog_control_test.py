@@ -28,7 +28,7 @@ print('enabling leds!')
 for led in spx.leds:
     spx.set_power(10, led)
 
-print('playing laser pulse train...')
+print('playing led pulse train...')
 ao.play_voltages(voltages, block=True)
 print('done!')
 
