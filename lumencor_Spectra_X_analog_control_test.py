@@ -10,8 +10,13 @@ ao = ni_PCIe_6738.DAQ(num_channels=16, rate=1e5, verbose=False)
 ttl_high_v = 5
 pulse_s = 0.5
 duty_cycle = 0.5    # Fraction of period to be high (range 0 to 1)
-ao_channels = {
-    'vio' :10, 'blu' :11, 'cyn' :12, 'tll' :13, 'grn' :14, 'red' :15,}
+ao_channels = {'395/25':2,
+               '440/20':3,
+               '470/24':4,
+               '510/25':5,
+               '550/15':6,
+               '640/30':7,
+               }
 
 # calculate voltages:
 pulse_px = ao.s2p(pulse_s)
