@@ -161,9 +161,9 @@ class Controller:
         return None
 
 if __name__ == '__main__':
-    nicknames = ('vio', 'blu', 'cyn', 'tll', 'grn', 'red')
+    leds = ('395/25', '440/20', '470/24', '510/25', '550/15', '640/30')
     spx = Controller(
-        'COM12', led_names=nicknames, verbose=True, very_verbose=False)
+        which_port='COM5', led_names=leds, verbose=True, very_verbose=False)
 
     for led in spx.leds:
         spx.set_enable(True, led)
