@@ -5,6 +5,9 @@ Python device adaptor: Lumencor Spectra X light engine, 6 solid state sources.
 - ***Shutter output (or otherwise make safe for high power led emission).***
 - Try installing the 'Spectra' GUI from Lumencor for basic testing (optional).
 - Run either the main script or the 'analog' control example (configure as needed).
+
+![social_preview](https://github.com/amsikking/lumencor_Spectra_X/blob/main/social_preview.png)
+
 ## Details:
 The light engine comes in various models/configurations so be sure to update the main script (or analog control) to match the exact unit. Some things to look out for:
 - Each LED has a changeable filter that can modify the spectrum and power output.
